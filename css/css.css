@@ -1,0 +1,492 @@
+
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{   
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+}
+
+.boxcenter{
+    width:75%;
+    margin:0 auto;
+}
+.row{
+  display:flex;
+  width:100%;
+}
+.row2{
+float:left;
+    width:100%;
+}
+.mb{
+    margin-bottom:20px;
+}
+.mb10{
+    margin-bottom:10px;
+}
+  /* CSS CHO PHẦN HEADER */
+.header{
+    background:#fff;
+    font-size:16px;
+    padding:10px;
+}
+.header img{
+    width: 120px;
+}
+.menu{
+    background:#234C26;
+    border:1px solid #234C26;
+    padding:10px;
+    height:50px;
+
+}
+.menu ul{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu li a{
+    color:#fff;
+    text-decoration:none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu li a:hover{
+    transform: scale(1.1);
+}
+
+   /* css cho phần nội dung */
+.catalog{
+    display:flex;
+    gap:30px;
+}
+
+.boxleft{
+    width:75%;
+}
+.boxright{ 
+    width:25%;
+}
+.box_title{
+    display:flex;
+    background:#234C26;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding:10px;
+    color:#fff;
+    height:30px;
+    align-items:center;
+}
+.box_title h4{
+    font-size: 14px;
+}
+.box_content{
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    min-height:200px;
+    padding:20px;
+}
+.box_content2{
+    padding:10px;
+    background:#fff;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.box_search{
+    background:#fff;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    color:#000;
+}
+
+.banner{
+    width:100%;
+    min-width:300px;  
+    text-align:center;
+    position:relative;
+}
+.banner img{
+width:100%;
+height:300px;
+}
+.pre, .next{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    padding:16px;
+    color:#234C26;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease-in-out;
+    border-radius:0 3px 3px 0;
+    border:none;
+    
+}
+.pre:hover, .next:hover{
+    background-color:#fff;
+}
+.next{
+    right:0;
+    border-radius:5px 0 0 5px;
+}
+.pre{
+    left:0;
+    border-radius:0 5px 5px 0;
+}
+.all_items{
+    width:95%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.items{
+    width:95%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+}
+.box_items{
+    border:1px solid #EEEE;
+    border-radius:5px;
+    text-align:center;
+    height:350px;
+    position:relative;
+    overflow:hidden;
+}
+.box_items_img img{
+   width:100%;
+   height:200px;
+   border-radius:10px;
+}
+.box_items_img img:hover{
+    opacity: none;
+    transform: scale(1.1);
+}
+.box_items a{
+    text-decoration:none;
+    color:black;
+  
+}
+.item_name{
+    margin-top:10px;
+   font-weight:700;
+   text-decoration: none;
+   color: #234C26;
+   font-size: 20px;
+}
+.price{
+    padding: 10px 0;
+    font-size:16px;
+    color: red;
+}
+.box_items .price{
+    margin:10px 0;
+    color:red;
+    font-weight:500;
+}
+.add{
+    background-color: #fff;
+    color: #234C26;
+    padding:5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.add:hover{
+    background-color: #234C26;
+    color: #fff;
+}
+.box-dx{
+    padding: 10px 20px;
+    line-height: 30px;
+}
+.user{
+    font-size: 20px;
+    color: #000;
+}
+form{
+    text-align:center;
+}
+.form_li a{
+    text-decoration: none;
+    color:#234C26;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form_li a:hover{
+    text-decoration: underline;
+    color:#46994C;
+}
+.form_li{
+   list-style: none;
+}
+.form_account{
+  line-height: 150%;
+}
+.form_account input[type="email"],
+.form_account input[type="text"],
+.form_account input[type="password"],
+.form_content input[type="text"]{
+  width:100%;
+  border:1px solid #ccc;
+  border-radius:5px ;
+  padding:6px 10px;
+  margin-bottom:12px;
+}
+.form_account input[type="checkbox"]{
+  border-radius:5px ;
+}
+.form_account input[type="reset"],
+.form_account input[type="submit"],
+.form_content input[type="submit"],
+.form_content input[type="reset"],
+.form_content input[type="button"],
+.box-btn input[type="submit"],
+.box-dx input[type="submit"],
+.bill input[type="button"],
+.bill input[type="submit"]{
+    padding:6px;
+    background:#fff;
+    border:1px solid #234C26;
+    border-radius:5px;
+    color: #234C26;
+}
+.form_account input[type="reset"]:hover,
+.form_account input[type="submit"]:hover,
+.form_content input[type="submit"]:hover,
+.form_content input[type="reset"]:hover,
+.form_content input[type="button"]:hover,
+.box-btn input[type="submit"]:hover,
+.box-dx input[type="submit"]:hover,
+.box-dx input[type="reset"]:hover,
+.bill input[type="button"]:hover,
+.bill input[type="submit"]:hover{
+    background:#234C26;
+    border:1px solid #234C26;
+    border-radius:5px;
+    color: #fff;
+}
+.dmsp{
+    text-transform: uppercase;
+}
+/* Tài Khoản */
+
+.box-dx ul li{
+    list-style: none;
+
+}
+     /*  CSS CHO PHẦN DANH MỤC */
+.product_portfolio ul{
+    margin:0;
+    list-style-type:none;
+    padding:0;
+}
+.product_portfolio ul li{
+    padding:10px 20px;
+    background-color:#fff;
+    border-bottom:1px #ccc solid;
+}
+.product_portfolio ul li a{
+    text-decoration:none;
+    color:#234C26;
+}
+.product_portfolio ul li:hover{
+    background-color:#eee;
+}
+.box_search input{
+    padding:5px;
+    background-color:#ffff;
+    border-radius:5px;
+    border:1px #ccc solid;
+}
+
+.selling_products img{
+width:20%;
+height:50px;
+margin-right:10px;
+}
+.selling_products a{
+    color:#000;
+    text-decoration:none;
+}
+.selling_products a:hover{
+    color:#000;
+    text-decoration:underline;
+}
+.banner2 img{
+width:60%;
+}
+
+/* CSS CHO ADMIN */
+.header_admin{
+    background-color:#234C26;
+    border:1px #CCC solid;
+    color:#fff;
+    border-radius:5px;
+    padding:10px 20px;
+    
+}
+.header_admin h1{
+font-size:2vv;
+}
+.font_title{
+    background-color:#fff;
+    border:1px #CCC solid;
+    color:#234C26;
+    border-radius:5px;
+    padding:10px 20px;
+}
+.mr20{
+   margin-right:10px;
+}
+ label{
+   display:flex;
+   justify-content:start;
+    font-size:20px;
+    color:red;
+    margin-top:5px;
+}
+.formds_loai table{
+    width:100%;
+    border-collapse:collapse;
+    background-color:#f7f6f6;
+}
+.formds_loai table th{
+    padding: 10px 0;
+    font-size: 16px;
+    border:1px #ccc solid;
+}
+.formds_loai table tr{
+    padding:10px;
+    font-size: 14px;
+    border:1px #ccc solid;
+}
+.formds_loai table td{
+    padding:10px;
+    border:1px #ccc solid;
+}
+.box_footer{
+    margin-top:300px;
+}
+/* footer section starts */
+.footer{
+  background-color: #234C26;
+  color: #fff;
+  padding: 10px ;
+  
+}
+/* Css cho bl */
+.binhluan{
+    height: 300px;
+    overflow: scroll;
+}
+.box-bl{
+    padding-left: 20px;
+    width: 70%;
+}
+.box-user{
+    display: flex;
+    gap: 10px;
+}
+.box-user h6{
+    font-size: 16px;
+    font-weight: 500;
+}
+.box-user span{
+    font-size: 12px;
+    color: #706e6e;
+}
+.box-bl p{
+    font-size: 12px;
+    color: #000;
+}
+.box_act{
+    display: flex;
+    gap: 5px;
+}
+.box_act sub{
+    color: #000;
+    text-decoration:underline;
+}
+/* Css cho phần chi tiết sp*/
+.chitietsp{
+    display: flex;
+    gap: 50px;
+    padding: 50px 100px;
+
+}
+.chitietsp img{
+    width: 300px;
+    height: 300px;
+}
+.mota{
+    font-size: 14px;
+    line-height: 25px;
+}
+.box-btn{
+    margin: 20px;
+}
+.bl{
+    background-color: #fff;
+}
+/* CSS cho giỏ hàng */
+.payment table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.payment table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style the "checked" radio button */
+input[type="radio"]:checked {
+    border-color: #007bff; /* Change to the desired color */
+}
+/* Thiết kẻ thẻ select */
+.select {
+  display: flex;
+  width:250px;
+  height:30px;
+  border-radius: 10px;
+  opacity: none;
+
+}
+select {
+  flex: 1;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+  color: #234C26;
+  font-size: 16px;
+}
+
