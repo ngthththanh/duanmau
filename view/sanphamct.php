@@ -55,13 +55,13 @@
                 <input type="submit" name="guibinhluan" value="Gửi bình luận">
             </form>
         </div>      
-    <?php } else {?>
-        <div class="thongbao">
-            <?php 
-                echo '<div class="box_search"><h6>Đăng nhập để bình luận</h6></div>';
-            ?>
-        </div>
-    <?php }?>        
+        <?php } else {?>
+            <div class="thongbao">
+                <?php 
+                    echo '<div class="box_search"><h6>Đăng nhập để bình luận</h6></div>';
+                ?>
+            </div>
+        <?php }?>        
     </div>
     <div class=" mb">
         <div class="box_title"><h4>SẢN PHẨM CÙNG LOẠI</h4></div>
